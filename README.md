@@ -2,19 +2,15 @@
 
 This repository contains the analytic code used for the Rakai analysis prepared for submission to *PLOS Medicine* (2026).
 
-The purpose of this repository is to provide transparent, reproducible analysis code supporting the results presented in the manuscript. The code is written primarily in R and is organized to separate data preparation, analysis, and figure/table generation.
+The purpose of this repository is to provide transparent, reproducible analysis code supporting the results presented in the manuscript. The code is written primarily in R and is organized to separate data preparation, analysis, and figure/table generation. Input data for Rakai_cohort_code_PLOS_submission.R cannot be shared publicly but may be requested from datarequests@rhsp.org.
 
 ---
 
 ## Repository structure
 
 RakaiAnalysisPlosMed2026/  
-├── scripts/        # R scripts for data processing, analysis, and modeling  
-├── functions/      # Custom R functions used across analyses  
-├── figures/        # Generated figures for the manuscript  
-├── tables/         # Generated tables for the manuscript  
-├── outputs/        # Intermediate or final analytic outputs  
-├── data/           # (Optional) Data inputs; see Data availability section  
+├── Rakai_cohort_code_PLOS_submission.R                 # R script for cohort data processing and statistical model runs for incidence, prevalence, ART, VMMC trends etc. 
+├── Rakai_model_scenario_comparison_PLOS_submission.R   # R script for plotting EMOD output
 ├── README.md  
 └── .gitignore  
 
@@ -37,23 +33,18 @@ If `renv` is used, package versions can be restored by running `renv::restore()`
 The analysis is designed to be run in a modular fashion.
 
 Typical workflow:
-1. Run data preparation scripts to clean and structure input data
-2. Run analysis scripts to generate estimates
-3. Run figure and table scripts to reproduce manuscript outputs
-
-Scripts are numbered or named to indicate intended execution order where relevant.
-
+1. Run analysis scripts to generate incidence, prevalence, ART etc. estimates
+2. Plot outputs from mathematical model (EMOD)
 ---
 
 ## Data availability
 
 Due to ethical, legal, or data-use restrictions, the primary input data used in this analysis may not be publicly shareable.
-
 Where data cannot be shared:
-- Scripts assume the presence of locally stored input files
+- Cohort Script assumes the presence of locally stored input files.  This datafile may be provided upon request. 
+- Model comparison script uses csv files included in the data repository
 - Variable names, formats, and expected structures are documented in code comments
-
-Synthetic or placeholder data may be added where helpful to demonstrate workflow.
+- Synthetic or placeholder data may be added where helpful to demonstrate workflow.
 
 ---
 
