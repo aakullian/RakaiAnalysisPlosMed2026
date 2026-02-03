@@ -10,8 +10,11 @@ The purpose of this repository is to provide transparent, reproducible analysis 
 
 RakaiAnalysisPlosMed2026/  
 ├── Rakai_cohort_code_PLOS_submission.R                 # R script for cohort data processing and statistical model runs for incidence, prevalence, ART, VMMC trends etc. 
+
 ├── Rakai_model_scenario_comparison_PLOS_submission.R   # R script for plotting EMOD output
+
 ├── README.md  
+
 └── .gitignore  
 
 Folder names may evolve as the analysis is finalized.
