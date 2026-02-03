@@ -70,4 +70,5 @@ If you use or adapt this code, please cite the associated *PLOS Medicine* articl
 For questions about the analysis or code, please contact:
 
 **Adam Akullian**  
+adam.akullian@gatesfoundation.org
 Gates Foundation
